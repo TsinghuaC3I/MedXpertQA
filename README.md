@@ -11,6 +11,7 @@
     <a href="#news" style="text-decoration: none; font-weight: bold;">🔥 News</a> •
     <a href="#overview" style="text-decoration: none; font-weight: bold;">📖 Overview</a> •
     <a href="#features" style="text-decoration: none; font-weight: bold;">✨ Features</a> •
+    <a href="#benchmark-adoption" style="text-decoration: none; font-weight: bold;">🌍 Adoption</a> •
     <a href="#leaderboard" style="text-decoration: none; font-weight: bold;">📊 Leaderboard</a>
   </p>
   <p>
@@ -19,6 +20,8 @@
     <a href="#citation" style="text-decoration: none; font-weight: bold;">🎈 Citation</a>
   </p>
 </div>
+
+> 🌍 MedXpertQA has been included in official evaluations of foundation models from **Google DeepMind, Meta Superintelligence Labs, ByteDance Seed, and Alibaba Qwen**. See [Benchmark Adoption](#benchmark-adoption).
 
 ## 🔥News
 
@@ -57,6 +60,35 @@ The right side compares typical examples from MedXpertQA MM and a traditional be
 
 - **Mitigating Data Leakage:** We perform data synthesis to mitigate data leakage risk and conduct multiple rounds of expert reviews to ensure accuracy and reliability.
 - **Reasoning-Oriented Evaluation:** Medicine provides a rich and representative setting for assessing reasoning abilities beyond mathematics and code. We develop a reasoning-oriented subset to facilitate the assessment of o1-like models.
+
+## 🌍Benchmark Adoption
+
+The following official model releases, model cards, and technical reports report evaluation results on **MedXpertQA**:
+
+### Foundation Models
+
+| Organization | Model Releases |
+| --- | --- |
+| Google DeepMind | [Gemini 3 Pro](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-3-pro-vision/), [Gemma 4](https://ai.google.dev/gemma/docs/core/model_card_4), [DiffusionGemma](https://ai.google.dev/gemma/docs/diffusiongemma/model_card) |
+| Meta Superintelligence Labs | [Muse Spark](https://ai.meta.com/blog/introducing-muse-spark-msl/) |
+| ByteDance Seed | [Seed2.0](https://seed.bytedance.com/en/seed2) |
+| Alibaba Qwen | [Qwen3.5](https://qwen.ai/blog?id=qwen3.5) |
+
+### Medical-Specialized Models
+
+| Organization | Model Releases |
+| --- | --- |
+| Google DeepMind | [MedGemma 1.5](https://developers.google.com/health-ai-developer-foundations/medgemma/model-card), [MedGemma 1](https://developers.google.com/health-ai-developer-foundations/medgemma/model-card-v1) |
+| Alibaba DAMO Academy | [Lingshu](https://huggingface.co/lingshu-medical-mllm/Lingshu-7B) |
+| Alibaba Quark Medical Team | [QuarkMed](https://arxiv.org/html/2508.11894v1) |
+| LG AI Research | [EXAONE 4.5](https://github.com/LG-AI-EXAONE/EXAONE-4.5) |
+| ByteDance XiaoHe Medical AI | [MedXIAOHE](https://arxiv.org/html/2602.12705) |
+| ACTAVA | [Cura 1T](https://www.actava.ai/cura) |
+| MBZUAI | [MedMO](https://huggingface.co/MBZUAI/MedMO-8B) |
+| InfiX AI | [InfiMed-Foundation](https://huggingface.co/InfiX-ai/InfiMed-Foundation-4B) |
+| JD Health International | [Citrus-V](https://github.com/jdh-algo/Citrus-V) |
+
+*Evaluation settings and evaluated subsets may differ across reports. Please refer to each source for details. The second table includes both medical-specialized systems and other advanced models that report MedXpertQA results.*
 
 ## 📊Leaderboard
 
