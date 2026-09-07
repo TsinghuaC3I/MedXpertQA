@@ -131,6 +131,21 @@ We provide a script *eval.ipynb* to calculate accuracy on each subset.
 > [!NOTE]
 > Please use this script when evaluating the **QVQ** and **DeepSeek-R1**. Through case studies, we found that the answer cleaning function in the *utils.py* is unsuitable for these two models.
 
+5. Evaluate with [EvalScope](https://github.com/modelscope/evalscope) (optional):
+
+EvalScope provides a standardized evaluation workflow for OpenAI-compatible model endpoints, with saved predictions, scoring, and reports.
+
+```bash
+evalscope eval \
+    --model YOUR_MODEL \
+    --api-url OPENAI_API_COMPAT_URL \
+    --api-key YOUR_API_KEY \
+    --datasets medxpertqa \
+    --limit 10  # Remove this line for formal evaluation
+```
+
+See the [EvalScope MedXpertQA guide](https://evalscope.readthedocs.io/en/latest/benchmarks/medxpertqa.html) for additional setup options, including text and multimodal subsets.
+
 ## 📨Contact
 
 - Shang Qu: [lindsay2864tt@gmail.com](mailto:lindsay2864tt@gmail.com)
