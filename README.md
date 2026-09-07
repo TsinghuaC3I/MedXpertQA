@@ -139,7 +139,7 @@ EvalScope provides a standardized evaluation workflow for OpenAI-compatible mode
 evalscope eval \
     --model YOUR_MODEL \
     --api-url OPENAI_API_COMPAT_URL \
-    --api-key EMPTY_TOKEN \
+    --api-key YOUR_API_KEY \
     --datasets medxpertqa \
     --limit 10  # Remove this line for formal evaluation
 ```
